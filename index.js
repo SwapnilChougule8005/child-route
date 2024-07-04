@@ -1,20 +1,8 @@
-import React from 'react';
-import { Link, Outlet } from "react-router-dom"
-import './styles.css'
+export {default as Getting} from './Getting';
+export {default as Upgrading} from './Upgrading';
+export {default as Hooks} from './Hooks';
+export {default as Route} from './Route';
+export {default as Utilities} from './Utilities';
+export {default as Routers} from './Routers';
 
-const SideBar = ()=>{
-  
-    return(
-        <div className='sidebar'>
-            <Link to='/start/getting'>Getting Started</Link>
-            <Link to='/start/upgrading'>Upgrading</Link>
-            <Link to='/start/routers'>Routers</Link>
-            <Link to='/start/hooks'>Hooks</Link>
-            <Link to='/start/route'>Route</Link>
-            <Link to='/start/utilities'>Utilities</Link>
-            <Outlet />
-        </div>
-    )
-}
-
-export default SideBar;
+export {default as Feature} from './Getting'
